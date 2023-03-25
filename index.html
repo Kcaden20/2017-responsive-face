@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Face</title>
+        <style>
+            body {
+                background-color: #06fb06;
+            }
+            
+            .head { 
+                background-color: white;
+                border: 1px solid black;
+                border-radius: 125px;
+                height:250px;
+                width:250px;
+                margin: 100px auto 0px auto;
+                position:relative; 
+            }
+            
+            .eye {
+                background-color: black;
+                border-radius: 50px;
+                display: inline-block;
+                margin-left: 20%;
+                margin-top: 20%;
+                height:40%;
+                width:20%;
+
+                
+            }
+            
+            .eye::before {
+                content: "";
+                position:absolute;
+                top:35%;
+                width:10%;
+                height:10%;
+                margin-left: -5%;
+                background-color: white;
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                z-index: 10;
+            }
+            
+            .mouth {
+                background-color: white;
+                border:1px solid black;
+                border-radius: 50%;
+                height:20%;
+                margin: 5% auto 0px auto;
+                width:20%;
+                
+            }
+            
+            .neck {
+                width:10px;
+                height:10px;
+                background-color:white;
+                
+            }
+        </style>
+    </head>
+    <body>
+
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="mouth"></div>
+
+    </body>
+</html>
